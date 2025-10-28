@@ -1,0 +1,221 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #3DEB42, #3DEB7D, #80EB3D, #70EB9D);
+  color: #000000;
+  padding: 20px;
+}
+main {
+  text-align: center;
+}
+
+/* ----- ENCABEZADO ----- */
+header {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- TITULOS Y TEXTOS ----- */
+h1, h2, h3 {
+  margin-bottom: 10px;
+  color: #3DEB42; /* Verde principal para resaltar títulos */
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* ----- CONTENEDORES PRINCIPALES ----- */
+main, aside {
+  margin-bottom: 20px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.85); /* fondo blanco translúcido */
+  border-left: 8px solid #70EB9D; /* toque de color verde menta */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- LISTAS ----- */
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+/* ----- FORMULARIOS Y BOTONES ----- */
+button, input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+button {
+  background: #3DEB42;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #80EB3D;
+  transform: scale(1.05);
+}
+
+/* ----- PIE DE PÁGINA ----- */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: #000;
+  background: rgba(112, 235, 157, 0.85);
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- RESPONSIVO ----- */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  header {
+    padding: 10px 0;
+  }
+}
+.video-container {
+  background-color: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+}
+.titulo-seccion {
+  text-align: center;
+  font-size: 2em;
+  color: #22b14c;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #aaffaa;
+}
+
+/* Tabla con bordes visibles y diseño limpio */
+.tabla-precios {
+  width: 90%;
+  margin: 0 auto 40px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1.1em;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Bordes marcados entre celdas */
+.tabla-precios th, 
+.tabla-precios td {
+  border: 1px solid #a6f3a2;
+  padding: 14px;
+  text-align: center;
+  color: #222;
+}
+
+/* Encabezados */
+.tabla-precios th {
+  background: linear-gradient(to right, #3DEB42, #3DEB7D);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Filas alternadas para mejor legibilidad */
+.tabla-precios tr:nth-child(even) {
+  background-color: #eafbe9;
+}
+
+.tabla-precios tr:hover {
+  background-color: #d4f8d3;
+  transition: 0.3s;
+}
+form {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+label {
+  display: block;
+  margin: 8px 0 3px;
+}
+
+input, textarea, select {
+  width: 100%;
+  max-width: 100%;
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 7px 15px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+iframe {
+  width: 100%;
+  height: 400px;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  form {
+    padding: 10px;
+  }
+
+  input, textarea, select {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
